@@ -254,6 +254,7 @@ ENTITY_DESCRIPTIONS = (
         translation_key="outside_air_temperature",
         device_class=SensorDeviceClass.TEMPERATURE,
         native_unit_of_measurement=UnitOfTemperature.CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
         registry=parameter_map["REG_SENSOR_OAT"],
     ),
     SystemairSensorEntityDescription(
@@ -261,6 +262,7 @@ ENTITY_DESCRIPTIONS = (
         translation_key="extract_air_temperature",
         device_class=SensorDeviceClass.TEMPERATURE,
         native_unit_of_measurement=UnitOfTemperature.CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
         registry=parameter_map["REG_SENSOR_PDM_EAT_VALUE"],
     ),
     SystemairSensorEntityDescription(
@@ -268,6 +270,7 @@ ENTITY_DESCRIPTIONS = (
         translation_key="supply_air_temperature",
         device_class=SensorDeviceClass.TEMPERATURE,
         native_unit_of_measurement=UnitOfTemperature.CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
         registry=parameter_map["REG_SENSOR_SAT"],
     ),
     SystemairSensorEntityDescription(
@@ -275,6 +278,7 @@ ENTITY_DESCRIPTIONS = (
         translation_key="overheat_temperature",
         device_class=SensorDeviceClass.TEMPERATURE,
         native_unit_of_measurement=UnitOfTemperature.CELSIUS,
+        state_class=SensorStateClass.MEASUREMENT,
         registry=parameter_map["REG_SENSOR_OHT"],
     ),
     SystemairSensorEntityDescription(
